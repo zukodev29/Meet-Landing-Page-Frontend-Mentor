@@ -1,0 +1,377 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html, body{
+    max-height: 100%;
+}  
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+/*CSS reset code*/
+/*Font that we use in this exercise*/
+@font-face {
+  font-family: 'Red Hat Display';
+  src: url(/meet-landing-page/starter-code/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf);
+}
+/*Basic body code*/
+body{
+  max-width: 1440px;
+  font-size: 1rem;
+  font-family: 'Red Hat Display';
+}
+/*Image that we use at the top of the page meet-logo*/
+.logo-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 500px;
+  margin-top: 100px;
+  margin-bottom: 110px;
+}
+/*Code for the image on the right side of the page in the header*/
+.header-right-side-image img{
+  float: right;
+  margin-top: -250px;
+  margin-right: -550px;
+}
+/*Code for centering text in the header*/
+.header-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 500px;
+}
+/*Code for the bold text*/
+.header-top-text{
+  margin-top: -470px;
+  font-size: 5em;
+  font-weight: 900;
+}
+/*Code for the bold text,second row*/
+.header-top-text-second-part{
+  margin-top: -300px;
+  font-size: 4em;
+  font-weight: 900;
+  position: absolute;
+}
+/*Size for the bold text in the header*/
+.header-middle{
+  font-size: 18px;
+}
+/*Code for the gray text*/
+.header-middle-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #86848f;
+  font-weight: 600;
+  margin-right: -500px;
+  margin-top: -90px;
+}
+/*Code for the gray text,its centering text in the second row*/
+.header-middle-text-second-part{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #86848f;
+  font-weight: 600;
+  margin-right: -500px;
+}
+/*Code for the positioning links in the header*/
+.header-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Code for the first link,hover effect*/
+.first-link:hover{
+  background-color: #5b97ac;
+  opacity: 0.9;
+}
+/*Code for the first link,link on the left side in the header*/
+.first-link{
+  background-color: #5b97ac;
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+/*Code for the second link,hover effect*/
+.second-link:hover{
+  background-color: #855fb2;
+  opacity: 0.9;
+}
+/*Code for the second link,link on the right side in the header*/
+.second-link{
+  background-color: #855fb2;
+  width: 140px;
+  height: 50px;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-right: -490px;
+}
+/*Code for the link text*/
+.first-link-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13px;
+  text-decoration: none;
+  color: rgb(255,255,255);
+  font-weight: 900;
+  font-size: 18px;
+}
+/*Code for the first link text-v1.3*/
+.green-part{
+ color: #8fddf1;
+ margin-left: 5px;
+}
+/*Code for the second link text*/
+.second-link-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 13px;
+  text-decoration: none;
+   color: rgb(255,255,255);
+  font-weight: 900;
+  font-size: 18px;
+}
+/*Code for the vertical link in the header above circle with number one*/
+.vertical-line-1{
+  border-left: 1px solid #e8e8e8;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 730px;
+}
+/*Code for the circle around number one*/
+.first-part{
+  margin-top: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 973px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e8e8e8;
+  margin-top: 235px;
+  font-size: 18px;
+}
+/*Code for the number one*/
+.first-circle{
+  text-decoration: none;
+  color: #98979d;
+  font-weight: 900;
+  margin-left: -1px;
+}
+/*Grid for the 4 images*/
+.images-grid{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4,250px);
+  margin-top: 70px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 550px;
+}
+/*Code for the text under grid images,positioning*/
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 550px;
+  margin-top: 60px;
+}
+/*Code for the text style*/
+.about-text{
+  font-weight: 800;
+  color: #548488;
+  font-size: 22px;
+}
+/*Code for the bold text that you see under 4 images,positioning*/
+.about-bolder-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 550px;
+  margin-top: 5px;
+  font-weight: 900;
+  font-size: 2.063rem;
+}
+/*Code for the second row of bold text*/
+.about-bolder-text-second-part{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 550px;
+  margin-top: -13px;
+  font-weight: 900;
+  font-size: 2.063rem;
+}
+/*Code for the gray text under bold text*/
+.about-subtext{
+  margin-left: 780px;
+  font-size: 17px;
+   color: #98979d;
+  font-weight: 600;
+  margin-top: 20px;
+}
+/*Code for the second row of the gray text*/
+.second-row{
+  margin-left: -10px;
+}
+/*Code for the third row of the gray text*/
+.third-row{
+  margin-left: 50px;
+}
+/*Code for the second vertical line in the footer with number two*/
+.vertical-line-2{
+  border-left: 1px solid #e8e8e8;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 1600px;
+}
+/*Code for the circle number around number two*/
+.second-part{
+  margin-top: 231px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 973px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e8e8e8;
+  font-size: 18px;
+}
+/*Code for the number two*/
+.second-circle{
+  text-decoration: none;
+  color: #98979d;
+  font-weight: 900;
+  margin-left: -1px;
+}
+/*Code for the footer layout,this code containts background image for the footer
+and color that goes over the background image,for color we use linear gradient property,
+apart from that everything is let's say ordinary*/
+.footer-card{
+  height: 300px;
+  width: 1999px;
+  margin-top: 120px;
+  background-image: 
+  linear-gradient(rgba(89, 154, 172, 0.8), rgba(89, 154, 172, 0.8)), 
+  url('/meet-landing-page/starter-code/assets/desktop/image-footer.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+}
+/*Code for the header of the footer*/
+.header-of-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  padding-top: 65px;
+  font-size: 3.438rem;
+  font-weight: 900;
+  color: rgb(255,255,255);
+}
+/*Code for the text under the footer*/
+.footer-text{
+   color: rgb(255,255,255);
+   font-weight: 400;
+   font-size: 22px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 20px;
+}
+/*Code for the footer link,positioning*/
+.footer-flex{
+  float: right;
+  margin-top: -42px;
+  margin-right: 160px;
+}
+/*Code for the footer link,hover effect*/
+.footer-link:hover{
+     background-color: #855fb2;
+     opacity: 0.9;
+}
+/*Code for the styling of the footer link*/
+.footer-link{
+  background-color: #855fb2;
+  width: 200px;
+  height: 60px;
+  border-radius: 30px;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*Footer link text*/
+.footer-link-text{
+  color: rgb(255,255,255);
+  font-weight: 900;
+  font-size: 18px;
+  text-decoration: none;
+}
+/*Code for the-v1.3 that's in the link*/
+.footer-span{
+  color: #c0a7d8;
+}
